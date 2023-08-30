@@ -31,7 +31,8 @@ const { Circle, Triangle, Square } = require('./lib/shapes');
     ];
 
   // Class to generate each shape type, color, text, and text color
-  async function generateLogo(text, textColor, shapeType, shapeColor) {
+  async function generateLogo(userInput) {
+    const { text, textColor, shapeType, shapeColor } = userInput;
     let shape;
   
     switch (shapeType) {
@@ -64,7 +65,7 @@ const { Circle, Triangle, Square } = require('./lib/shapes');
   async function main() {
     try {
       const userInput = await inquirer.prompt(questions);
-      await generateLogo(userInput.text, userInput.textColor, userInput.shapeType, userInput.shapeColor);
+      await generateLogo(userInput);
     } catch (error) {
       console.error('An error occurred:', error);
     }
