@@ -1,4 +1,4 @@
-# README Generator
+# Logo Creator
 
 ## Description
 
