@@ -26,7 +26,7 @@ const { Circle, Triangle, Square } = require('./lib/shapes');
         {
             type: 'input',
             name: 'shapeColor',
-            message: 'Enter shape color:',
+            message: 'Enter shape color (or hexidecimal):',
         },
     ];
 
@@ -34,8 +34,8 @@ const { Circle, Triangle, Square } = require('./lib/shapes');
   async function generateLogo(userInput) {
     const { text, textColor, shapeType, shapeColor } = userInput;
     let shape;
-  
-    switch (shapeType) {
+  console.log(shapeType);
+    switch (shapeType.toLowerCase()) {
       case 'circle':
         shape = new Circle(shapeColor);
         break;
