@@ -9,6 +9,13 @@ const { Circle, Triangle, Square } = require('./lib/shapes');
             type: 'input',
             name: 'text',
             message: 'Enter Logo Characters:',
+            validate: function(input) {
+              if (input.length === 3) {
+                  return true;
+              } else {
+                  return 'Please enter 3 characters.';
+              }
+          }
         },
         {
             type: 'input',

@@ -59,6 +59,8 @@ Screenshot of App:
 
 * [SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg)
 
+* Received help from Instructor John on fixing the error for generating logo
+
 ## License
 
 MIT License
