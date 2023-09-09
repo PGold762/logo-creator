@@ -1,1 +1,2 @@
-<svg width="300" height="200"><rect x="10" y="10" fill="black" /></svg>
+<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="10" width="80" height="80" fill="Green" />
+            <text x="50" y="60" text-anchor="middle" fill="Black">TWD</text></svg>

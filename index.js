@@ -41,21 +41,21 @@ const { Circle, Triangle, Square } = require('./lib/shapes');
   async function generateLogo(userInput) {
     const { text, textColor, shapeType, shapeColor } = userInput;
     let shape;
-  console.log(shapeType);
+    console.log(shapeType);
     switch (shapeType.toLowerCase()) {
       case 'circle':
-        shape = new Circle(shapeColor);
+        shape = new Circle(shapeColor, { content: text, color: textColor });
         break;
       case 'square':
-        shape = new Square(shapeColor);
+        shape = new Square(shapeColor, { content: text, color: textColor });
         break;
       case 'triangle': 
-        shape = new Triangle(shapeColor);
+        shape = new Triangle(shapeColor, { content: text, color: textColor });
         break;
     }
  
     // Variables for what the SVG is written as
-    const svgCode = `<svg width="300" height="200">${shape.generateSVG()}</svg>`;
+    const svgCode = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">${shape.generateSVG()}</svg>`;
     const fileName = 'logo.svg';
   
     // Writing the data to the file

@@ -35,11 +35,11 @@ Download the files from the repo and install locally on your machine. Be sure to
 
 This is an app local on your device that you may trigger within terminal and answer the questions to generate your SVG file.
 
-Link to video: [SVG Logo](https://drive.google.com/file/d/1cpSMH_uo8VwF2yHeI6yi1-eFA10sLFXp/view)
+Link to video: [SVG Logo](https://drive.google.com/file/d/1acgBITCI-FZYMOclGS4bQFX9MzOjcn1S/view)
 
 Screenshot of App: 
 
-![SVG Logo](./mod9-screencap.png "SVG Logo")
+![SVG Logo](/svg-logo.png "SVG Logo")
 
 ## Credits
 
@@ -60,6 +60,8 @@ Screenshot of App:
 * [SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg)
 
 * Received help from Instructor John on fixing the error for generating logo
+
+* Received help from ASKBCS on viewing the svg file and the issues around that
 
 ## License
 
